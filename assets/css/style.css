@@ -137,14 +137,23 @@ h2 {
 
 /* media query for screen maxwidth: 729px */
 @media screen and (max-width: 729px) {
+  .wrapper {
+    /* display: none; */
+    width: 95%;
+  }
   .todo-wrapper {
     padding: 0.9em;
     height: 3rem;
   }
   form {
-    transform: scale(1);
+    width: 100%;
+    transform: scale(1.45);
     margin: 0 0 2em 0;
   }
+
+  /* .user-input{
+    width: 100%;
+  } */
 
   .user-inputed-todo {
     width: 60%;
