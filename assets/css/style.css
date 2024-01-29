@@ -145,11 +145,11 @@ h2 {
     padding: 1em;
     height: 3rem;
   }
-  form {
+  /* form {
     width: 100%;
-    transform: scale(1.45);
+    transform: scale();
     margin: 0 0 2em 0;
-  }
+  } */
 
   /* .user-input{
     width: 100%;
