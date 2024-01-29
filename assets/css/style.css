@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(0, 0, 255, 0.692);
+}
+
+.wrapper {
+  background-color: transparent;
+  text-align: center;
+  width: 60%;
+  height: fit-content;
+  margin: 5rem auto;
+  border-radius: 5px;
+  padding: 2em 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 1px 2px 13px #00000060;
+  /* animation */
+  transition: 1s;
+  animation: scaleAnimation 1s linear 1ms;
+  border: 4px outset;
+}
+
+/* form {
+  transform: scale(1.4);
+  margin: 0 0 2em 0;
+} */
+
+input[type="text"] {
+  background-color: inherit;
+  width: 50%;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 0 0.5em;
+  border: 4px inset;
+  outline: none;
+  color: rgb(36, 36, 175);
+}
+
+input[type="submit"] {
+  background: black;
+  color: white;
+  height: 3rem;
+  width: 80px;
+  border-radius: 5px;
+  /* border: none; */
+  border: 4px outset;
+  cursor: grab;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(82, 79, 79);
+  box-shadow: 1px 2px 3px #00000060;
+}
+
+.todo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  width: 83%;
+  height: 4rem;
+  margin: 1em auto;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 1px 2px 13px #00000060;
+  transition: 1s;
+  animation: scaleAnimation 1s linear 1ms;
+  border: 4px outset;
+}
+
+.del-btn {
+  width: 60px;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: 4px outset;
+  cursor: grab;
+}
+
+.todo-wrapper:hover {
+  box-shadow: 1px 5px 13px #00000060;
+  transform: scale(1.1);
+  background-color: #f2f2f5;
+}
+
+.edit-btn {
+  width: 60px;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 0 0.5em;
+  border: 4px outset;
+  cursor: grab;
+}
+
+input[type="checkbox"] {
+  cursor: grab;
+}
+
+.user-inputed-todo {
+  width: 70% !important;
+  height: 2rem !important;
+  background-color: inherit;
+  margin: 0 0.5em;
+  border: none !important;
+}
+
+h2 {
+  color: blue;
+  margin: 0.5em 0;
+}
+
+.buttons-wrapper {
+  display: flex;
+}
+
+@keyframes scaleAnimation {
+  from {
+    scale: 0.5;
+  }
+}
+
+/* media query for screen maxwidth: 729px */
+@media screen and (max-width: 729px) {
+  .todo-wrapper {
+    padding: 0.9em;
+    height: 3rem;
+  }
+  form {
+    transform: scale(1);
+    margin: 0 0 2em 0;
+  }
+
+  .user-inputed-todo {
+    width: 60%;
+    height: 3rem;
+  }
+
+  .del-btn,
+  .edit-btn {
+    /* width: 60px;
+    height: 2rem; */
+    width: 3em;
+    height: fit-content;
+    font-size: small;
+  }
+}
